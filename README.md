@@ -66,10 +66,10 @@ BETWEEN 8 AND 9;
 IN ('option','option')
 ```
 
-- **LIKE**: (**%** and **_** ) and **ILIKE**
-    - ********%  Matches any sequence of characters********
-    - **_  Matches any single character**
-    - **************************************************ILIKE is case insensitive.**************************************************
+- **LIKE** and **ILIKE**
+    - **Matches any sequence of characters**
+    - **Matches any single character**
+    - **ILIKE is case insensitive**
 
 ```sql
 WHERE name LIKE 'A%';
@@ -115,7 +115,7 @@ SELECT AGGREGRATE() FROM table_name;
 - Can be used on categorical columns, which are non-continuous.
 - Example: Cabin class on a flight has (First Class, Business Class, Economy)
 - These can be numerical or string.
-- In the **************`SELECT`**  statement, column must wither have a **`AGGREGATE`** function or be in the  ****************`GROUP BY`** call.
+- In the **`SELECT`**  statement, column must wither have a **`AGGREGATE`** function or be in the  **`GROUP BY`** call.
 
 ```sql
 SELECT category_column, AGGREGRATE(data_column)
@@ -123,7 +123,7 @@ FROM table
 GROUP BY category_column;
 ```
 
-- ****************`WHERE`**************** statements should not refer to the aggregation result.
+- **`WHERE`** statements should not refer to the aggregation result.
 
 ```sql
 SELECT category_column,category_column_2 AGGREGRATE(data_column)
