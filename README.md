@@ -1,4 +1,12 @@
 # PostgreSQL
+## Table of Contents:
+- [SQL Fundamentals](#sql-fundamentals)
+- [GROUP BY statements](#group-by-statements)
+- [JOINS Statements](#joins-statements)
+- [ADVANCED SQL Commands](#advanced-sql-commands)
+- [CREATE databases and Tables](#create-databases-and-tables)
+- [Conditional Expressions and Procedures Introduction](#conditional-expressions-and-procedures-introduction)
+
 
 ## Things To Remember:
 
